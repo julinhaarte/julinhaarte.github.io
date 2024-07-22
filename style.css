@@ -1,0 +1,200 @@
+body{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    background-image: url('/img/BG.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+    background-position: top; ;
+    }
+
+.header{
+    margin-top: 4%;
+    
+}
+
+#headerlinks{
+    color: rgb(48, 48, 48);
+    font-size: x-large;
+}
+
+#headerlinks:hover{
+    font-weight: 900;
+    color: #FFA7A3;
+}
+
+a{
+    text-decoration: none;
+}
+
+#imgJulinhaHome{
+    width: 85%;
+    padding-left:12%;
+    padding-top: 2%;
+}
+
+#logoHome{
+    width: 85%;
+    padding-top: 0;
+    padding-right: 15%;
+    
+}
+
+h1{
+    font-family: "Grandstander", cursive ;
+    font-weight: 700;
+    font-size: 400%;
+    
+}
+
+#sobrediv{
+    margin-right: 10%;
+}
+
+#sobremimtitle{
+    color: #FFA7A3;
+    text-align: right;
+    font-size: 400%;
+
+}
+
+.sobremimtitle{
+    margin-top:10%;
+    margin-right:0%;
+}
+
+#polaroid{
+    padding-top: 6%;
+    width:90%;
+}
+#txtsobre{
+   color: ivory; 
+   padding-left: 10%;
+   text-align:justify;
+   font-size: 130%;
+}
+
+#tdbao{
+    color: ivory;
+    padding-left: 10%; 
+    padding-top: 5%;
+}
+
+#hardskills{
+    width: 100%; 
+    padding-left: 10%;
+    padding-top: 3%;  
+    padding-bottom: 3%; 
+}
+
+#meutrabalho{
+    margin-top: 12%;
+}
+
+#titletrab{
+    color: #3DC1AA;
+    text-align: center;
+}
+
+#cartoes{
+    padding: 4%;
+    color:#4d4d4d;
+    
+}
+#cartao{
+    padding: 0%;
+}
+
+b{
+    color:#3DC1AA;
+}
+
+#moreinfos{
+    color:#4d4d4d;
+    text-align: center;
+}
+
+#linkbehance{
+    color: #3DC1AA;
+    font-weight: 700;
+}
+#imgtelefone{
+    padding-top: 3%;  
+    padding-left: 5%;
+    width: 90%;
+}
+
+#txtcontato{
+    color: ivory;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+#txtcttdir{
+    color: ivory;
+    font-size: 250% ;
+}
+
+#cttinfos{
+    padding-top: 12%;
+}
+
+#redesicons{
+    color: ivory;
+    font-size: 300%;
+    align-items: center;
+
+}
+
+#redesiconsdiv{
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+form {
+    width: 100%;
+    padding-right: 10%;
+}
+
+input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 0px solid #ccc;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #3DC1AA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 180%;
+    font-family: "Grandstander", cursive ;
+    font-weight: 700;
+
+
+}
+
+button:hover {
+    background-color: #206e61;
+}
+
+.button-container {
+    text-align: right;
+}
+
+#logo-verde{
+    width: 30%;
+}
+
+#rodape{
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+#txtrodape{
+    color: ivory;
+    text-align: right;
+}
