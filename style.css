@@ -1,7 +1,7 @@
 body{
     font-family: "Raleway", sans-serif;
     font-weight: 400;
-    background-image: url('/img/BG.png');
+    background-image: url('/img/BG.png'); 
     background-size: 100% 100%;
     background-repeat: no-repeat; 
     background-position: top; ;
@@ -45,9 +45,13 @@ h1{
     font-size: 400%;
     
 }
+#bgsobre{
+    width: 100%;
+}
 
 #sobrediv{
     margin-right: 10%;
+    
 }
 
 #sobremimtitle{
@@ -70,7 +74,7 @@ h1{
    color: ivory; 
    padding-left: 10%;
    text-align:justify;
-   font-size: 130%;
+   font-size: 120%;
 }
 
 #tdbao{
@@ -177,7 +181,7 @@ button {
 
 }
 
-button:hover {
+#enviarBtn:hover {
     background-color: #206e61;
 }
 
