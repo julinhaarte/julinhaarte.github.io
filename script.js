@@ -10,7 +10,7 @@ document.getElementById('emailForm').addEventListener('submit', function(event) 
         message: document.getElementById('message').value
     };
 
-    emailjs.send('julinhaarte-portfoliosit', 'template_0o0sstm', emailParams)
+    emailjs.send('service_d9pm57j', 'template_0o0sstm', emailParams)
         .then(function(response) {
             alert('Eba! E-mail enviado! :D');
         }, function(error) {
