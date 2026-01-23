@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
 
         const emailParams = {
-            from_email: document.getElementById('email').value,
+            email: document.getElementById('email').value,
             message: document.getElementById('message').value
         };
 
