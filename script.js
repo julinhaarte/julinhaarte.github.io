@@ -1,5 +1,5 @@
 (function(){
-    emailjs.init('julinhaarte-portfoliosit'); 
+    emailjs.init('SM_xuvN0sBrOJni4v'); 
 })();
 
 document.getElementById('emailForm').addEventListener('submit', function(event) {
