@@ -10,10 +10,10 @@ document.getElementById('emailForm').addEventListener('submit', function(event) 
         message: document.getElementById('message').value
     };
 
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', emailParams)
+    emailjs.send('julinhaarte-portfoliosit', 'template_r42q5p7', emailParams)
         .then(function(response) {
             alert('Eba! E-mail enviado! :D');
         }, function(error) {
-            alert('Vixi! Deu  ruim no envio! :(');
+            alert('Vixi! Deu ruim no envio! :(');
         });
 });
