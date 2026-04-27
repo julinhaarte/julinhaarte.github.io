@@ -22,11 +22,16 @@
             
             <!-- Menu Desktop -->
             <nav class="nav-desktop">
-                <a href="#home" class="nav-link">home</a>
-                <a href="#sobremim" class="nav-link">sobre mim</a>
-                <a href="#meutrabalho" class="nav-link">meu trabalho</a>
-                <a href="#contato" class="nav-link">contato</a>
+                <a href="#home" class="nav-link" data-i18n="navHome">home</a>
+                <a href="#sobremim" class="nav-link" data-i18n="navAbout">sobre mim</a>
+                <a href="#meutrabalho" class="nav-link" data-i18n="navWork">meu trabalho</a>
+                <a href="#contato" class="nav-link" data-i18n="navContact">contato</a>
             </nav>
+
+            <div class="language-switch" role="group" aria-label="Language switch" data-i18n-aria-label="languageSwitchLabel">
+                <button class="language-option active" type="button" data-lang="pt-BR">PT</button>
+                <button class="language-option" type="button" data-lang="en">EN</button>
+            </div>
             
             <!-- Botão Hambúrguer -->
             <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -38,10 +43,10 @@
         
         <!-- Menu Mobile -->
         <nav class="nav-mobile" id="navMobile">
-            <a href="#home" class="nav-link-mobile">home</a>
-            <a href="#sobremim" class="nav-link-mobile">sobre mim</a>
-            <a href="#meutrabalho" class="nav-link-mobile">meu trabalho</a>
-            <a href="#contato" class="nav-link-mobile">contato</a>
+            <a href="#home" class="nav-link-mobile" data-i18n="navHome">home</a>
+            <a href="#sobremim" class="nav-link-mobile" data-i18n="navAbout">sobre mim</a>
+            <a href="#meutrabalho" class="nav-link-mobile" data-i18n="navWork">meu trabalho</a>
+            <a href="#contato" class="nav-link-mobile" data-i18n="navContact">contato</a>
         </nav>
     </header>
 
@@ -65,8 +70,8 @@
             <div class="sobre-content">
                 <div class="sobre-left">
                     <div class="sobre-text">
-                        <h3 class="sobre-greeting">tudo bão? :)</h3>
-                        <p class="sobre-description">
+                        <h3 class="sobre-greeting" data-i18n="aboutGreeting">tudo bão? :)</h3>
+                        <p class="sobre-description" data-i18n="aboutDescription">
                             Eu sou a Julinha, tenho um gatinho super fofo, e também sou ilustradora.
                             Já formada em Design, acumulo mais de 8 anos de experiência, predominantemente 
                             no design gráfico, com um conhecimento abrangente no Pacote Adobe, possuo 
@@ -79,9 +84,9 @@
                         </p>
                     </div>
                     <div class="hardskills-section">
-                        <h3 class="sobre-greeting">hard skills</h3>                   
-                        <img src="img/hard skills.png" alt="Hard Skills" class="hardskills-img">
-                        <p class="sobre-description">
+                        <h3 class="sobre-greeting" data-i18n="hardSkillsTitle">hard skills</h3>                   
+                        <img src="img/hard skills.png" alt="Hard Skills" class="hardskills-img" data-i18n-alt="hardSkillsImageAlt">
+                        <p class="sobre-description" data-i18n="aboutProjectDescription">
                             Esse site é meu primeiro projeto sozinha como programadora, tudo foi feito por mim, 
                             desde as ilustrações, o layout e a programação em si!
                         </p>
@@ -97,9 +102,9 @@
     <!-- Seção Meu Trabalho -->
     <section class="section trabalho" id="meutrabalho">
         <div class="container">
-            <h3 class="section-title section-title-center" id="trabalhoTitle">meu trabalho</h3>
+            <h3 class="section-title section-title-center" id="trabalhoTitle" data-i18n="workTitle">meu trabalho</h3>
             <p class="trabalho-subtitle">
-                para ver mais <a href="https://www.behance.net/julia-soares" target="_blank" class="link-behance">clique aqui</a>
+                <span data-i18n="workSubtitlePrefix">para ver mais</span> <a href="https://www.behance.net/julia-soares" target="_blank" class="link-behance" data-i18n="workSubtitleLink">clique aqui</a>
             </p>
             
             <!-- Carrossel de Portfolio -->
@@ -112,87 +117,87 @@
                     <div class="carousel-track" id="carouselTrack">
                         <!-- Todos os cards individuais -->
                         <a href="https://www.behance.net/gallery/203776101/Lumina-Tech-Consulting" target="_blank" class="portfolio-card">
-                            <img src="img/LUMINA-CAPA.png" alt="Lumina Tech Solutions" class="portfolio-img">
+                            <img src="img/LUMINA-CAPA.png" alt="Lumina Tech Solutions" class="portfolio-img" data-i18n-alt="portfolio1Alt">
                             <div class="portfolio-info">
-                                <h4 class="portfolio-title">Lumina Tech Solutions</h4>
-                                <p class="portfolio-category">Identidade Visual + Layout Web</p>
+                                <h4 class="portfolio-title" data-i18n="portfolio1Title">Lumina Tech Solutions</h4>
+                                <p class="portfolio-category" data-i18n="portfolio1Category">Identidade Visual + Layout Web</p>
                             </div>
                         </a>
                         <a href="https://www.behance.net/gallery/169896779/Copilado-de-Ilustracoes" target="_blank" class="portfolio-card">
-                            <img src="img/ilustras-capa.png" alt="Portifólio de ilustrações" class="portfolio-img">
+                            <img src="img/ilustras-capa.png" alt="Portifólio de ilustrações" class="portfolio-img" data-i18n-alt="portfolio2Alt">
                             <div class="portfolio-info">
-                                <h4 class="portfolio-title">Portifólio de ilustrações</h4>
-                                <p class="portfolio-category">Ilustração</p>
+                                <h4 class="portfolio-title" data-i18n="portfolio2Title">Portifólio de ilustrações</h4>
+                                <p class="portfolio-category" data-i18n="portfolio2Category">Ilustração</p>
                             </div>
                         </a>
                         <a href="https://www.behance.net/gallery/169102965/Luna-Cosmticos-Naturais-Identidade-Visual" target="_blank" class="portfolio-card">
-                            <img src="img/capa-luna.png" alt="Luna Cosméticos Naturais" class="portfolio-img">
+                            <img src="img/capa-luna.png" alt="Luna Cosméticos Naturais" class="portfolio-img" data-i18n-alt="portfolio3Alt">
                             <div class="portfolio-info">
-                                <h4 class="portfolio-title">Luna Cosméticos Naturais</h4>
-                                <p class="portfolio-category">Identidade Visual</p>
+                                <h4 class="portfolio-title" data-i18n="portfolio3Title">Luna Cosméticos Naturais</h4>
+                                <p class="portfolio-category" data-i18n="portfolio3Category">Identidade Visual</p>
                             </div>
                         </a>
                         <a href="https://www.behance.net/gallery/105805683/Pizza-Social-Media" target="_blank" class="portfolio-card">
-                            <img src="img/capa-pizza.png" alt="Pizzaria da Rita" class="portfolio-img">
+                            <img src="img/capa-pizza.png" alt="Pizzaria da Rita" class="portfolio-img" data-i18n-alt="portfolio4Alt">
                             <div class="portfolio-info">
-                                <h4 class="portfolio-title">Pizzaria da Rita</h4>
-                                <p class="portfolio-category">Social Media</p>
+                                <h4 class="portfolio-title" data-i18n="portfolio4Title">Pizzaria da Rita</h4>
+                                <p class="portfolio-category" data-i18n="portfolio4Category">Social Media</p>
                             </div>
                         </a>
                         <a href="https://www.behance.net/gallery/169282659/Julia-Sena-Nutricao" target="_blank" class="portfolio-card">
-                            <img src="img/julia-sena-capa.png" alt="Julia Sena Nutricionista" class="portfolio-img">
+                            <img src="img/julia-sena-capa.png" alt="Julia Sena Nutricionista" class="portfolio-img" data-i18n-alt="portfolio5Alt">
                             <div class="portfolio-info">
-                                <h4 class="portfolio-title">Julia Sena Nutricionista</h4>
-                                <p class="portfolio-category">Identidade Visual</p>
+                                <h4 class="portfolio-title" data-i18n="portfolio5Title">Julia Sena Nutricionista</h4>
+                                <p class="portfolio-category" data-i18n="portfolio5Category">Identidade Visual</p>
                             </div>
                         </a>
                         <a href="https://www.behance.net/gallery/168337837/IKI-STORE-Id-Visual" target="_blank" class="portfolio-card">
-                            <img src="img/iki-capa.png" alt="IKI store" class="portfolio-img">
+                            <img src="img/iki-capa.png" alt="IKI store" class="portfolio-img" data-i18n-alt="portfolio6Alt">
                             <div class="portfolio-info">
-                                <h4 class="portfolio-title">IKI store</h4>
-                                <p class="portfolio-category">Identidade Visual</p>
+                                <h4 class="portfolio-title" data-i18n="portfolio6Title">IKI store</h4>
+                                <p class="portfolio-category" data-i18n="portfolio6Category">Identidade Visual</p>
                             </div>
                         </a>
                         <a href="https://www.behance.net/gallery/169892243/Beto-Faria-Personal-Trainer-Logo" target="_blank" class="portfolio-card">
-                            <img src="img/capa-beto.png" alt="Beto Faria Personal Trainer" class="portfolio-img">
+                            <img src="img/capa-beto.png" alt="Beto Faria Personal Trainer" class="portfolio-img" data-i18n-alt="portfolio7Alt">
                             <div class="portfolio-info">
-                                <h4 class="portfolio-title">Beto Faria Personal Trainer</h4>
-                                <p class="portfolio-category">Identidade Visual</p>
+                                <h4 class="portfolio-title" data-i18n="portfolio7Title">Beto Faria Personal Trainer</h4>
+                                <p class="portfolio-category" data-i18n="portfolio7Category">Identidade Visual</p>
                             </div>
                         </a>
                         <a href="https://www.behance.net/gallery/93092781/Leve-Light-Chef" target="_blank" class="portfolio-card">
-                            <img src="img/capa-leve.png" alt="Leve Light Chef" class="portfolio-img">
+                            <img src="img/capa-leve.png" alt="Leve Light Chef" class="portfolio-img" data-i18n-alt="portfolio8Alt">
                             <div class="portfolio-info">
-                                <h4 class="portfolio-title">Leve Light Chef</h4>
-                                <p class="portfolio-category">Embalagem</p>
+                                <h4 class="portfolio-title" data-i18n="portfolio8Title">Leve Light Chef</h4>
+                                <p class="portfolio-category" data-i18n="portfolio8Category">Embalagem</p>
                             </div>
                         </a>
                         <a href="https://www.behance.net/gallery/94120605/Revista-Representai" target="_blank" class="portfolio-card">
-                            <img src="img/capa-representai.png" alt="Revista Representaí" class="portfolio-img">
+                            <img src="img/capa-representai.png" alt="Revista Representaí" class="portfolio-img" data-i18n-alt="portfolio9Alt">
                             <div class="portfolio-info">
-                                <h4 class="portfolio-title">Revista Representaí</h4>
-                                <p class="portfolio-category">Editorial</p>
+                                <h4 class="portfolio-title" data-i18n="portfolio9Title">Revista Representaí</h4>
+                                <p class="portfolio-category" data-i18n="portfolio9Category">Editorial</p>
                             </div>
                         </a>
                         <a href="https://www.behance.net/gallery/85770295/Suquinho-Heinz" target="_blank" class="portfolio-card">
-                            <img src="img/capa-suquinho.png" alt="Suco Heinz" class="portfolio-img">
+                            <img src="img/capa-suquinho.png" alt="Suco Heinz" class="portfolio-img" data-i18n-alt="portfolio10Alt">
                             <div class="portfolio-info">
-                                <h4 class="portfolio-title">Suco Heinz</h4>
-                                <p class="portfolio-category">Embalagem</p>
+                                <h4 class="portfolio-title" data-i18n="portfolio10Title">Suco Heinz</h4>
+                                <p class="portfolio-category" data-i18n="portfolio10Category">Embalagem</p>
                             </div>
                         </a>
                         <a href="https://www.behance.net/gallery/94816571/Design-de-superficie" target="_blank" class="portfolio-card">
-                            <img src="img/capa-noah.png" alt="Noah e as Frutas Tropicais" class="portfolio-img">
+                            <img src="img/capa-noah.png" alt="Noah e as Frutas Tropicais" class="portfolio-img" data-i18n-alt="portfolio11Alt">
                             <div class="portfolio-info">
-                                <h4 class="portfolio-title">Noah e as Frutas Tropicais</h4>
-                                <p class="portfolio-category">Estampa</p>
+                                <h4 class="portfolio-title" data-i18n="portfolio11Title">Noah e as Frutas Tropicais</h4>
+                                <p class="portfolio-category" data-i18n="portfolio11Category">Estampa</p>
                             </div>
                         </a>
                         <a href="https://www.behance.net/gallery/169105221/Mini-Livro-Ilustrado" target="_blank" class="portfolio-card">
-                            <img src="img/capa-livro.png" alt="Livro Pedido de Casamento" class="portfolio-img">
+                            <img src="img/capa-livro.png" alt="Livro Pedido de Casamento" class="portfolio-img" data-i18n-alt="portfolio12Alt">
                             <div class="portfolio-info">
-                                <h4 class="portfolio-title">Livro Pedido de Casamento</h4>
-                                <p class="portfolio-category">Ilustração + Editorial</p>
+                                <h4 class="portfolio-title" data-i18n="portfolio12Title">Livro Pedido de Casamento</h4>
+                                <p class="portfolio-category" data-i18n="portfolio12Category">Ilustração + Editorial</p>
                             </div>
                         </a>
                     </div>
@@ -211,29 +216,29 @@
     <!-- Seção Serviços -->
     <section class="section servicos" id="servicos">
         <div class="container">
-            <h3 class="section-title servicos-title">serviços que eu presto</h3>
+            <h3 class="section-title servicos-title" data-i18n="servicesTitle">serviços que eu presto</h3>
             
             <div class="servicos-cards">
                 <div class="servico-card">
-                    <h3 class="servico-card-title">design gráfico</h3>
+                    <h3 class="servico-card-title" data-i18n="graphicDesignTitle">design gráfico</h3>
                     <ul class="servico-list servico-list-two-columns">
-                        <li>Identidade Visual</li>
-                        <li>Redes Sociais</li>
-                        <li>Folders e Cardápios</li>
-                        <li>Rótulos e Embalagens</li>
-                        <li>Landing Pages</li>
-                        <li>Papelaria</li>
-                        <li>UX/UI</li>
+                        <li data-i18n="serviceGraphic1">Identidade Visual</li>
+                        <li data-i18n="serviceGraphic2">Redes Sociais</li>
+                        <li data-i18n="serviceGraphic3">Folders e Cardápios</li>
+                        <li data-i18n="serviceGraphic4">Rótulos e Embalagens</li>
+                        <li data-i18n="serviceGraphic5">Landing Pages</li>
+                        <li data-i18n="serviceGraphic6">Papelaria</li>
+                        <li data-i18n="serviceGraphic7">UX/UI</li>
                     </ul>
                 </div>
                 
                 <div class="servico-card">
-                    <h3 class="servico-card-title">ilustração</h3>
+                    <h3 class="servico-card-title" data-i18n="illustrationTitle">ilustração</h3>
                     <ul class="servico-list">
-                        <li>Ilustração Editorial</li>
-                        <li>Criação de Personagens</li>
-                        <li>Pattern Design</li>
-                        <li>Retratos Personalizados</li>
+                        <li data-i18n="serviceIllustration1">Ilustração Editorial</li>
+                        <li data-i18n="serviceIllustration2">Criação de Personagens</li>
+                        <li data-i18n="serviceIllustration3">Pattern Design</li>
+                        <li data-i18n="serviceIllustration4">Retratos Personalizados</li>
                     </ul>
                 </div>
             </div>
@@ -246,11 +251,11 @@
             <div class="contato-content">
                 <div class="contato-left">
                     <!-- <h2 class="section-title">contato</h2> -->
-                    <img src="img/Telefone.png" alt="Telefone" class="contato-img">
+                    <img src="img/Telefone.png" alt="Telefone" class="contato-img" data-i18n-alt="contactImageAlt">
                 </div>
                 
                 <div class="contato-right">
-                    <h3 class="contato-subtitle">redes sociais da julinha :)</h3>
+                    <h3 class="contato-subtitle" data-i18n="contactSocialTitle">redes sociais da julinha :)</h3>
                     
                     <div class="social-icons">
                         <a href="https://api.whatsapp.com/send?phone=5515996486297" target="_blank" class="social-link" aria-label="WhatsApp">
@@ -270,12 +275,12 @@
                         </a>
                     </div>
                     
-                    <h3 class="contato-subtitle">ou mande um email!</h3>
+                    <h3 class="contato-subtitle" data-i18n="contactEmailTitle">ou mande um email!</h3>
                     
                     <form id="emailForm" class="contact-form">
-                        <input type="email" id="email" name="email" placeholder="seu e-mail aqui" required>
-                        <textarea id="message" name="message" rows="5" placeholder="sua mensagem aqui" required></textarea>
-                        <button type="submit" id="enviarBtn" class="btn-submit">enviar</button>
+                        <input type="email" id="email" name="email" placeholder="seu e-mail aqui" required data-i18n-placeholder="emailPlaceholder">
+                        <textarea id="message" name="message" rows="5" placeholder="sua mensagem aqui" required data-i18n-placeholder="messagePlaceholder"></textarea>
+                        <button type="submit" id="enviarBtn" class="btn-submit" data-i18n="sendButton">enviar</button>
                     </form>
                 </div>
             </div>
@@ -286,8 +291,8 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <img src="img/logo-verde.png" alt="Julinha Arte" class="footer-logo">
-                <p class="footer-text">Copyright © 2024 Julinha Arte. Todos os direitos reservados.</p>
+                <img src="img/logo-verde.png" alt="Julinha Arte" class="footer-logo" data-i18n-alt="footerLogoAlt">
+                <p class="footer-text" data-i18n="footerText">Copyright © 2024 Julinha Arte. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>

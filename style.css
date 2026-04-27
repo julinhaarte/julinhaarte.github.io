@@ -64,6 +64,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
 }
 
 .logo-img {
@@ -90,6 +91,47 @@ img {
 .nav-desktop {
     display: flex;
     gap: 40px;
+}
+
+.language-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px;
+    border: 1px solid rgba(39, 39, 39, 0.16);
+    border-radius: 999px;
+    background-color: rgba(242, 242, 242, 0.85);
+    backdrop-filter: blur(6px);
+}
+
+.language-option {
+    min-width: 42px;
+    border: none;
+    background: transparent;
+    color: #272727;
+    font-family: "Grandstander", cursive;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 6px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.language-option:hover {
+    color: #FFA7A3;
+}
+
+.language-option.active {
+    background-color: #FFA7A3;
+    color: #F2F2F2;
+    box-shadow: 0 4px 12px rgba(255, 167, 163, 0.3);
+}
+
+.language-option:focus-visible {
+    outline: 2px solid #272727;
+    outline-offset: 2px;
 }
 
 .nav-link {
@@ -650,6 +692,10 @@ img {
 @media (max-width: 900px) {
     .nav-desktop {
         display: none;
+    }
+
+    .language-switch {
+        margin-left: auto;
     }
     
     .hamburger {
